@@ -50,8 +50,8 @@ def save():
                 data = new_data
             with open("data.txt", "w") as data_file:
                 json.dump(data, data_file, indent=4)
-                website_entry.delete(0, END)
-                password_entry.delete(0, END)
+            website_entry.delete(0, END)
+            password_entry.delete(0, END)
 
 
 # ---------------------------- UI SETUP ------------------------------- #
