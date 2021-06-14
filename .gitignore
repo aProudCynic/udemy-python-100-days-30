@@ -1,0 +1,6 @@
+.idea
+.vscode
+.data.txt
+poetry.lock
+pyproject.toml
+.DS_Store
