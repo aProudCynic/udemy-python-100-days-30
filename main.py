@@ -55,8 +55,21 @@ def save():
             website_entry.delete(0, END)
             password_entry.delete(0, END)
 
+
 def search():
-    pass
+    try:
+        with open(DATA_FILE_NAME, "r") as data_file:
+            data = json.load(data_file)
+            website = website_entry.get()
+            print(data)
+            try:
+                result = data[website]
+                print(result)
+            except KeyError:
+                return None
+    except FileNotFoundError:
+        return None
+
 # ---------------------------- UI SETUP ------------------------------- #
 
 window = Tk()
