@@ -32,9 +32,10 @@ def save():
     password = password_entry.get()
 
     new_data = {
-        "website": website,
-        "email": email,
-        "password": password,
+        website: {
+            "email": email,
+            "password": password,
+        }
     }
 
     if len(website) == 0 or len(password) == 0:
