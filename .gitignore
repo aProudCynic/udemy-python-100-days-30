@@ -1,6 +1,6 @@
 .idea
 .vscode
-.data.txt
+data.txt
 poetry.lock
 pyproject.toml
 .DS_Store
